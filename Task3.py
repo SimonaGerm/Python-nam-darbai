@@ -4,14 +4,18 @@
 # E.g.
 # For 11 the function will return True, for 12 -> False
 
-number = 11
-if number > 1:
-    for value in range(2, int(number/2)+1):
-        if (number % value) == 0:
-            print('False')
-            break
-    else:
-        print('True')
-else:
-    print('False')
 
+def prime_argument(number):
+    if number > 1:
+        for value in range(2, int(number/2)+1):
+            if (number % value) == 0:
+                return 'False'
+        else:
+            return 'True'
+    else:
+        return 'False'
+
+
+if __name__ == '__main__':
+
+    print(prime_argument(11))
