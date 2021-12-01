@@ -7,9 +7,14 @@
 # "Jim Morrison" and "Mr. Mojo Risin"
 # "Tom Marvolo Riddle" and "I am Lord Voldemort"
 
-word1 = 'army'
-word2 = 'mary'
-if sorted(word1) == sorted(word2):
-    print('anagrams')
-else:
-    print('not anagrams')
+
+def is_anagram(word1, word2):
+    if sorted(word1) == sorted(word2):
+        return 'anagrams'
+    else:
+        return 'not anagrams'
+
+
+if __name__ == '__main__':
+
+    print(is_anagram('army', 'mary'))
