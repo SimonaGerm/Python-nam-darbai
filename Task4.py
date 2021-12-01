@@ -2,8 +2,13 @@
 # palindrome (ie read backwards and forwards is exactly the same, eg
 # "kayak", "madam").
 
-string = 'savas'
-if string == string[::-1]:
-    print('palindrome')
-else:
-    print('not palindrome')
+def is_palindrome(string):
+    if string == string[::-1]:
+        return'palindrome'
+    else:
+        return 'not palindrome'
+
+
+if __name__ == '__main__':
+
+    print(is_palindrome('savas'))
