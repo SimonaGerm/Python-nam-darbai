@@ -12,6 +12,6 @@ def smallest(list):
             current_min = num
     return current_min
 
-if __name__ == '__main__':
 
+if __name__ == '__main__':
     print(smallest([15, 52, 258, 125, 1, 658, 1000]))
