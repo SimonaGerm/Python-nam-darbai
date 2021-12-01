@@ -12,3 +12,5 @@ with open('fileND.txt', 'r', encoding='utf-8') as f:
     words = content.split()
     word_count = Counter(words)
     print(word_count.most_common(5))
+
+# result =  [('w', 9), ('się', 6), ('z', 5), ('do', 5), ('A', 5)]
