@@ -1,5 +1,5 @@
 # Susikuriu Dict:
-numword = {1:'one', 2:'two', 3:'three', 4:'four', 5:'five', 6:'six', 7:'seven', 8:'eight', 9:'nine'}
+numword = {1:'one', 2:'two', 3:'three', 4:'four', 5:'five', 6:'six', 7:'seven', 8:'eight', 9:'nine', 0 : 'zero'}
 
 
 # # Pirmas metodas pasiimti reikšmes iš Dict:
@@ -44,19 +44,12 @@ numword = {1:'one', 2:'two', 3:'three', 4:'four', 5:'five', 6:'six', 7:'seven', 
 # Hint: you need the input () function, a dictionary and a loop
 
 
-# def converttoword(number):
-#     numindex = number[0]
-#     while numindex:
-#          print(list(map(numword.get, numindex)))
-         # numindex += 1
-    # print('?')
-
-
-
 number = list(input('Insert your number: '))
-if number[0] not in numword:
-    exit('Not able to convert')
-if number[0] in numword:
-    print(numword[number])
+
+ints = []
+for num in number:
+    ints.append(int(num))
+for element in ints:
+    print(numword[element], end=' ')
 
 
