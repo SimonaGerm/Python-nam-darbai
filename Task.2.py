@@ -10,7 +10,7 @@ def smallest(list):
     for num in list:
         if num < current_min:
             current_min = num
-    return current_min
+    return list.index(current_min)
 
 
 if __name__ == '__main__':
