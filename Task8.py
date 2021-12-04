@@ -7,7 +7,6 @@ rectangle, but not every rectangle is a square."""
 
 # Rectangle Class:
 
-
 class Rectangle:
     def __init__(self, height, width):
         self.height = height
@@ -18,12 +17,6 @@ class Rectangle:
 
     def area(self):
         return self.height * self.width
-
-    def set_height(self, height):
-        self.height = height
-
-    def set_width(self, width):
-        self.width = width
 
 
 class Square(Rectangle):
@@ -41,6 +34,7 @@ class Square(Rectangle):
 
 
 if __name__ == '__main__':
+
     rectangle_1 = Rectangle(5, 20)
     square_1 = Square(5)
     print(f'Rectangle perimeter is: {rectangle_1.perimeter()}')
