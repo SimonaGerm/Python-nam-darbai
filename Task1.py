@@ -15,8 +15,3 @@ for num in number:
     ints.append(int(num))
 for element in ints:
     print(num_word[element], end=' ')
-
-
-answer = input('Do you want to continue? (yes/no): ')
-while answer == answer.lower():
-    print(number)
