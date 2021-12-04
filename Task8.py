@@ -3,8 +3,6 @@ the figure. Implement methods to measure the perimeter and area of a
 rectangle.
 Then create a Square class, remembering that every square is a
 rectangle, but not every rectangle is a square."""
-
-
 # Rectangle Class:
 
 class Rectangle:
