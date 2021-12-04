@@ -9,12 +9,12 @@
 
 
 def is_anagram(word1, word2):
-    if sorted(word1) == sorted(word2):
-        return 'anagrams'
+    if sorted(word1.lower()) == sorted(word2.lower()):
+        return 'is anagram'
     else:
-        return 'not anagrams'
+        return 'not anagram'
 
 
 if __name__ == '__main__':
 
-    print(is_anagram('army', 'mary'))
+    print(is_anagram('mary', 'army'))

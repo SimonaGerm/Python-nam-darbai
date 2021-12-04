@@ -1,8 +1,6 @@
-# Create a function that checks that the number given in the argument is
-# prime. The function should take a numeric value and return a logical
-# value of True / False.
-# E.g.
-# For 11 the function will return True, for 12 -> False
+# Create a function that checks that the string given as an argument is a
+# palindrome (ie read backwards and forwards is exactly the same, eg
+# "kayak", "madam").
 
 
 def prime_argument(number):
