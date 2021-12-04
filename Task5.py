@@ -6,13 +6,18 @@
 # Hint: use a loop, conditional statement, and appropriate methods for the string
 
 
-string = 'The quick Brown Fox'
-upper_case = 0
-lower_case = 0
-for case in string:
-    if case.isupper():
-        upper_case = upper_case + 1
-    elif case.islower():
-        lower_case = lower_case + 1
-print(f'upper: {upper_case}')
-print(f'lower: {lower_case}')
+def count_lower_upper(sentence):
+    lower_case = 0
+    upper_case = 0
+    for case in sentence:
+        if case.isupper():
+            upper_case = upper_case + 1
+        elif case.islower():
+            lower_case = lower_case + 1
+    return upper_case, lower_case
+
+
+if __name__ == '__main__':
+
+    sentence = 'The quick Brown Fox'
+    print(count_lower_upper(sentence))
