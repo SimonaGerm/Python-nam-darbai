@@ -5,7 +5,6 @@
 
 from collections import Counter
 
-# TODO: Kažkas negerai, ne tą gauti tikėjausi, gauti fragmentai
 
 with open('fileND.txt', 'r', encoding='utf-8') as f:
     content = f.read()
