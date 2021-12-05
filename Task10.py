@@ -8,27 +8,24 @@ sure to handle exceptions."""
 # veikiantis paprastas kodas
 
 
-while True:
-    try:
-        print(abs(float(input(f'Enter your number: '))))
-        break
-    except ValueError as V:
-        print(V, f'Error: It is not a number.')
-        continue
+# while True:
+#     try:
+#         print(abs(float(input(f'Enter your number: '))))
+#         break
+#     except ValueError as V:
+#         print(V, f'Error: It is not a number.')
 
 
-"""Nepavyko aprašyti kaip funkcijos, gaunu klaidą, exception neveikia. Ką daryti kitaip?"""
-# def absolute_value(number):
-#     while True:
-#         try:
-#             print(abs(number))
-#             break
-#         except ValueError as V:
-#             print(V, f'Error: It is not a number.')
-#             continue
-#
-#
-# if __name__ == '__main__':
-#
-#     number = abs(float(input(f'Enter your number: ')))
+def absolute_value():
+    while True:
+        try:
+            print(abs(float(input(f'Enter your number: '))))
+            break
+        except ValueError as V:
+            print(V, f'Error: It is not a number.')
+
+
+if __name__ == '__main__':
+
+    absolute_value()
 
